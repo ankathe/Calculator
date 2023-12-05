@@ -13,6 +13,7 @@ function App() {
     const hasOperator = input.endsWith('+') || input.endsWith('-')|| input.endsWith('*') || input.endsWith('/') 
     const valueIsOperator = valor === '+' || valor === '-' || valor === '*' || valor === '/' 
 
+
     if(hasOperator && valueIsOperator){
       alert('Please only one operation')
     }else{
@@ -20,7 +21,9 @@ function App() {
     } 
   };
 
-  const clearAccion =() =>setInput('');
+  const clearAccion =() =>{
+    setInput('')
+  };
 
   const resultCalculation = () => {
     if(input){
@@ -29,6 +32,8 @@ function App() {
     alert('Please add numbers in the screen');
   }  
   }; 
+
+
 
   return (
     <div className="App">
@@ -64,7 +69,7 @@ function App() {
         </div>
         
         <div className="fila">
-        <Clear clearAccion={clearAccion} >
+        <Clear clearAccion={clearAccion}>
           Clear</Clear>
         </div>
       </div>
