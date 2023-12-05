@@ -1,3 +1,22 @@
+# React.js Calculator
+This project is a simple calculator developed using React.js. It is part of a series of personal projects that make up my development portfolio. The goal of this calculator is to provide an intuitive interface for performing basic mathematical operations efficiently.
+
+# Features
+Basic Operations: Addition, subtraction, multiplication, and division.
+Responsive Design: Adaptable to different devices and screen sizes.
+
+# Contributions
+Contributions are welcome! If you find any issues or have suggestions, please create an issue or send a pull request.
+
+# Technologies Used
+React.js
+HTML5
+CSS3
+
+# Author
+Katherine Cruz
+
+.......................................................
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
