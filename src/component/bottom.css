@@ -7,25 +7,26 @@
     font-weight: bold;
     font-size: 35px;
     background-color: #b4db94;
-    border: 2px solid #415e28;
+    border: 1px solid #415e28;
     color: #ffffff;
     cursor: pointer;
     margin: 4px;
     border-radius: 25px;
     user-select: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .boton-container:hover{
     background-color: #9061c3;
-    border: 2px solid #331d4a;
+    border: 1px solid #331d4a;
 }
 
 .operator{
     background-color: #afcacc;
-    border: 2px solid #3dbcc5;
+    border: 1px solid #3dbcc5;
 }
 
 .operator:hover{
     background-color: #f1b266;
-    border: 2px solid #ffa02e;
+    border: 1px solid #ffa02e;
 }
