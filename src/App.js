@@ -4,14 +4,32 @@ import Boton from './component/bottom';
 import Screen from './component/pantalla';
 import Clear from './component/clear';
 import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 function App() {
   const [input, setInput] = useState('');
-  const addInput = valor => {
-    setInput(input + valor);
-  }
-  const clearAccion =() =>setInput('');
   
+  const addInput = valor => {
+    const hasOperator = input.endsWith('+') || input.endsWith('-')|| input.endsWith('*') || input.endsWith('/') 
+    const valueIsOperator = valor === '+' || valor === '-' || valor === '*' || valor === '/' 
+
+    if(hasOperator && valueIsOperator){
+      alert('Please only one operation')
+    }else{
+      setInput(input + valor); 
+    } 
+  };
+
+  const clearAccion =() =>setInput('');
+
+  const resultCalculation = () => {
+    if(input){
+    setInput(evaluate(input));
+    }else{
+    alert('Please add numbers in the screen');
+  }  
+  }; 
+
   return (
     <div className="App">
       <div className="logo-container">
@@ -39,7 +57,7 @@ function App() {
           <Boton clickAccion={addInput}>*</Boton>
         </div>
         <div className="fila">
-          <Boton clickAccion={addInput}>=</Boton>
+          <Boton clickAccion={resultCalculation}>=</Boton>
           <Boton clickAccion={addInput}>0</Boton>
           <Boton clickAccion={addInput}>.</Boton>
           <Boton clickAccion={addInput}>/</Boton>
