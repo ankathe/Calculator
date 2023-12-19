@@ -1,10 +1,10 @@
 import './App.css';
-import logo from './images/Projects logo.png';
 import Boton from './component/bottom';
 import Screen from './component/pantalla';
 import Clear from './component/clear';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
+import Logo from './component/logo';
 
 function App() {
   const [input, setInput] = useState('');
@@ -37,10 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="logo-container">
-        <img src={logo} alt="projects logo" className="logo" 
-        />
-      </div>
+      <Logo/>
       <div className="calculator-container">
         <Screen input={input}/>
         <div className="fila">
