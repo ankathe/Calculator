@@ -5,7 +5,9 @@ import './logo.css';
 function Logo() {
     return(
         <div className="logo-container">
-            <img src={logo} alt="projects logo" className="logo" />
+            <a href="https://www.linkedin.com/in/katherine-cruz-7588b763" className="link">
+                <img src={logo} alt="projects logo" className="logo" />
+            </a>
         </div>
     )
 }
